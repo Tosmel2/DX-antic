@@ -156,6 +156,9 @@ nav ul li{
     color: #A06056;
     margin-bottom: 8px;
 }
+.project-right p{
+    line-height: 1.5;
+}
 
 
 /* ============footer section =========== */
@@ -326,9 +329,6 @@ nav ul li{
     }
     .project-right > div{
         width: 100%;
-    }
-    .project-right p{
-        line-height: 1.5;
     }
     
     .footer-container{
