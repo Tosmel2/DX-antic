@@ -290,6 +290,61 @@ nav ul li{
     display: block;
 }
 
+/* ===============product section============= */
+.product-section{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    padding: 2rem 7%;
+}
+.product-section .product-image{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.product-image::-webkit-scrollbar {
+    display: none;
+}
+.product-image .product-thumb{
+    object-fit: cover;
+    width: 40%;
+    height: 300px;
+    margin-right: 2rem;
+    border-radius: 7px;
+    scroll-behavior: smooth;
+    box-shadow: 2px 4px 12px 2px rgba(80, 78, 78, 0.75);
+}
+.product-image .product-thumb:last-child{
+    margin-right: 0;
+}
+.product-section .product-inspiration{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.product-inspiration h3{
+    width: 32%;
+    font-family: 'Merriweather';
+    font-weight: 300;
+    font-size: 45px;
+    color: #534B42;
+}
+.product-inspiration p{
+    width: 32%;
+    /* border: 2px solid red; */
+     line-height: 30px;
+}
+.product-inspiration span{
+    width: 32%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 780px){
     .hero-left{
         display: none;
@@ -401,6 +456,28 @@ nav ul li{
     font-size: 2.5rem;    
     }
     .hero-right .comments-icon{
+        display: none;
+    }
+    .product-section{
+        flex-direction: column-reverse;
+    }
+    .product-section .product-inspiration{
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .product-inspiration h3{
+        width: 100%;
+        text-align: center;        
+    }
+    .product-inspiration p{
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .product-image .product-thumb{
+        width: 65%;
+    }
+    .product-section .product-inspiration span{
         display: none;
     }
 }
